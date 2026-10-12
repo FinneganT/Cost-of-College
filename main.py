@@ -16,21 +16,25 @@ CS1430_MEETINGS_PER_SEMESTER = 45
 # ---- FUNCTIONS: replace each return 0 ----
 
 def cost_per_semester(annual_cost):
+    print(cost_per_semester)
     """Give back what one semester costs."""
     return 0
 
 
 def cost_per_month(annual_cost):
+    print(MONTHS_PER_YEAR)
     """Give back what one month of the academic year costs."""
     return 0
 
 
 def cost_per_day(annual_cost):
+    print(CLASS_DAYS_PER_SEMESTER)
     """Give back what one class day costs."""
     return 0
 
 
 def cost_per_credit(annual_cost, credits):
+  
     """Give back what one credit costs. credits is the number taken this semester."""
     return 0
 

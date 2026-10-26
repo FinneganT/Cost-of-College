@@ -52,8 +52,12 @@ def worth_it(annual_cost, credits, game_price):
 def main():
     # Ask for the total cost for one year here.
     annual_cost = float(input("Enter the total cost for a year: "))
+    while annual_cost <= 0:
+        annual_cost = float(input("Annual cost must be more than 0, Try again: "))
     # Then ask for the credits this semester.
     credits = int(input("Enter the credits for the semester: "))
+    while credits <= 0:
+        credits = input("Amount of credits must be more than 0, try again: ")
 
     while credits <= 0:
         credits = int(input("Enter a credit amount more than 0, Try again please: "))

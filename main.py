@@ -42,17 +42,30 @@ def cost_per_class(annual_cost, credits):
     return CS1430_course_cost / CS1430_MEETINGS_PER_SEMESTER 
 
 
+def worth_it(annuel_cost, credits):
+    game_price = float(input("Price of video game: "))
+    while game_price <= 0:
+        game_price = float(input("The price must be more than 0, Enter a valid input: "))
+    per_class = cost_per_class(annuel_cost, credits)
+    games = per_class/ game_price
+    print(f"One CS1430 class costs: ${per_class:.2f}")
+    print(f"That would equal {games:.2f} new video games!")
+
+
 # ---- PROGRAM ----
 
 def main():
     # Ask for the total cost for one year here.
-    annual_cost = int(input("Enter the total cost for a year: "))
+    annual_cost = float(input("Enter the total cost for a year: "))
     # Then ask for the credits this semester.
     credits = int(input("Enter the credits for the semster: "))
 
+    while credits <= 0:
+        credits = int(input("Enter a credit amount more than 0, Try again please: "))
+
     while True:
         # Show your menu here.
-        print("Cost of college breakdown")
+        print("-" * 10 + "Cost of college breakdown" + "-" * 10)
         print("1. Cost per semster")
         print("2.Cost per month")
         print("3. Cost for one class")
@@ -79,8 +92,8 @@ def main():
             print(f"Cost per credit: {cost_per_credit(annual_cost, credits):.2f}")
         elif choice == "5":
             print(f"Cost per CS1430 class: {cost_per_class(annual_cost, credits):.2f}")
-        #elif choice == "6":
-
+        elif choice == "6":
+            worth_it(annual_cost, credits)
         else:
             print("Invalid choice.")
 

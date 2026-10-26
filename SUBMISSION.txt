@@ -4,11 +4,11 @@ Points : 40 / 40  (from check.py; counts only when the Git and GitHub checks pas
 CS 1430 Assignment 2: The Cost of College
 GitHub user : FinneganT
 Repository  : https://github.com/FinneganT/Cost-of-College
-Commit      : 52e98c1438bd852f933896a16184a89be8b0027a
-Message     : Added formating
+Commit      : 3da5c4d9c15053644d146d2622943b33c5fb0929
+Message     : Got rid of a duplicate function
 Author      : finnegan <finnegansutherland@gmail.com>
-Committed   : 2026-10-25T21:47:58-05:00
-Checked     : 2026-10-25 21:48:36 Central Daylight Time
+Committed   : 2026-10-26T16:08:05-05:00
+Checked     : 2026-10-26 16:24:15 Central Daylight Time
 Python      : 3.14.5
 
 ================================================================
